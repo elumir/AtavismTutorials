@@ -15,26 +15,24 @@ public class ScreenManagerLogin : VisualElement
     }
     void OnGeometryChange(GeometryChangedEvent evt)
     {
-        m_LoginPanel = this.Q("PanelLogin");
+        m_LoginPanel = this.Q("PaenlLogin");
         m_ErrorPanel = this.Q("PanelError");
 
         m_ErrorMessage = this.Q<Label>("varErrorMessage");
 
-        m_LoginPanel?.Q("button-login")?.RegisterCallback<ClickEvent>(ev => EnableErrorPanel());
-        m_ErrorPanel?.Q("btn-closeError")?.RegisterCallback<ClickEvent>(ev => EnableLoginPanel());
+        m_LoginPanel?.Q("button-login")?.RegisterCallback<ClickEvent>(ev => OpenErrorPanel());
+        m_ErrorPanel?.Q("btn-closeError")?.RegisterCallback<ClickEvent>(ev => CloseErrorPanel());
 
         this.UnregisterCallback<GeometryChangedEvent>(OnGeometryChange);
     }
 
-    void EnableErrorPanel()
+    void OpenErrorPanel()
     {
-        m_LoginPanel.style.display = DisplayStyle.None;
         m_ErrorPanel.style.display = DisplayStyle.Flex;
         m_ErrorMessage.text = "You pressed the login button. Good for you!";
     }
-    void EnableLoginPanel()
+    void CloseErrorPanel()
     {
-        m_LoginPanel.style.display = DisplayStyle.Flex;
         m_ErrorPanel.style.display = DisplayStyle.None;
     }
 }

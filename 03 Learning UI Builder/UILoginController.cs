@@ -21,7 +21,7 @@ public class UILoginController : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         loginPanel = root.Q<VisualElement>("PanelLogin");
-        errorPanel = root.Q<VisualElement>("PanelError");       
+        errorPanel = root.Q<VisualElement>("PanelError");     
 
         loginButton = root.Q<Button>("button-login");
         registerButton = root.Q<Button>("button-register");
@@ -34,14 +34,12 @@ public class UILoginController : MonoBehaviour
 
     private void LoginButtonPressed()
     {
-        loginPanel.style.display = DisplayStyle.None;
         errorPanel.style.display = DisplayStyle.Flex;
         errorMessage.text = "You pressed the login button. Good for you!";
     }
     private void CloseErrorButtonPressed()
     {
-        loginPanel.style.display = DisplayStyle.Flex;
         errorPanel.style.display = DisplayStyle.None;
-
     }
+
 }
