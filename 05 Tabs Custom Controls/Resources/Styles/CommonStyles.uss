@@ -1,0 +1,142 @@
+.screen-centered {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.textfield {
+    background-image: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/UI_Etc/InputField_frame_activity.png?fileID=-2192968532387711199&guid=f78d6eb19e5b44152a71d2d3be9af0c8&type=3#textfield_activity_0');
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.textfield-icon {
+    background-image: none;
+    width: 50%;
+    height: 50%;
+    -unity-background-scale-mode: scale-to-fit;
+    opacity: 0.5;
+}
+
+#ScreenRegister .unity-text-field {
+    -unity-font: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&guid=45051d5d816ef4b8d84119f09ef942fb&type=3#Alata-Regular');
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    flex-direction: column;
+    margin-top: -43px;
+    margin-left: 0;
+}
+
+.unity-text-field__label {
+    opacity: 0.4;
+    -unity-text-align: middle-left;
+    -unity-font-style: italic;
+    -unity-font: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&guid=45051d5d816ef4b8d84119f09ef942fb&type=3#Alata-Regular');
+    letter-spacing: -2px;
+    width: auto;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    min-width: 30%;
+    color: rgb(255, 255, 255);
+}
+
+.unity-text-field:focus .unity-text-field__label {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.unity-text-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+#unity-text-input {
+    --unity-cursor-color: rgb(255, 255, 255);
+}
+
+.button {
+    width: 40%;
+    height: 70%;
+    color: rgb(0, 60, 0);
+    -unity-font-style: bold;
+    -unity-font: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&guid=45051d5d816ef4b8d84119f09ef942fb&type=3#Alata-Regular');
+    font-size: 200%;
+    letter-spacing: -3px;
+    -unity-text-align: middle-center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.2s;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.button:hover {
+    scale: 1.1 1.1;
+    transition-duration: 0.2s;
+}
+
+.button:active {
+    scale: 1 1;
+}
+
+.unity-toggle__label {
+    width: 90%;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.unity-toggle__checkmark {
+    background-image: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/UI_Etc/toggle_checkbox_off.png?fileID=21300000&guid=d1e42930e47b941418a1fc1bfd8345af&type=3#toggle_checkbox_off');
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.unity-toggle__input:checked .unity-toggle__checkmark {
+    background-image: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/UI_Etc/toggle_checkbox_on.png?fileID=21300000&guid=f7ac1d1df71c64f99bcd6de611d7e522&type=3#toggle_checkbox_on');
+}
+
+.tabContents {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    height: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

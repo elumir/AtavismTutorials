@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/_Custom/UI/Resources/Styles/CommonStyles.uss?fileID=7433441132597879392&amp;guid=765f1b6f0c59745f48e945ccc173cad0&amp;type=3#CommonStyles" />
+    <ui:VisualElement name="ScreenCustomize" class="screen-centered" style="display: flex; align-items: center; width: 60%; right: 0; left: 40%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; justify-content: space-between;">
+        <ui:VisualElement name="PanelCustomize" style="height: 95%; width: 100%; background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Popup/popup_02_frame1.png?fileID=-5395018932094082535&amp;guid=02e071c6b63824833bcd5b11e3471d06&amp;type=3#popup_detail_bg_0&apos;); margin-top: 10px;">
+            <ui:VisualElement name="Spacer" style="height: 150px;" />
+            <IconTabsView>
+                <ui:VisualElement name="tabs-container" style="margin-left: 20px; margin-right: 20px; flex-direction: row; display: flex; justify-content: space-around;">
+                    <IconTab focusable="true" name="tabOne" targetID="contentOne">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_powerup.png?fileID=21300000&amp;guid=268ac875f9668439f9a1c8d5e6922839&amp;type=3#btn_icon_powerup&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabTwo" targetID="contentTwo">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_wizard.png?fileID=21300000&amp;guid=84ea8babf74fa4e9a9d27401b99d3658&amp;type=3#btn_icon_wizard&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabThree" targetID="contentThree">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_assassin.png?fileID=21300000&amp;guid=6980abda02f3f46c7a9ceef8df7e4048&amp;type=3#btn_icon_assassin&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabFour" targetID="contentFour">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_custume_top.png?fileID=21300000&amp;guid=043371bb1196d4abd90e2052bd84480f&amp;type=3#btn_icon_custume_top&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabFive" targetID="contentFive">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_paint.png?fileID=21300000&amp;guid=7c4405d109d544116ac1ab256ec6f1ea&amp;type=3#btn_icon_paint&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabSix" targetID="contentSix">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_like_1.png?fileID=21300000&amp;guid=95a3ccbe9f9764c5d801ed700c5746d9&amp;type=3#btn_icon_like_1&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                </ui:VisualElement>
+                <ui:VisualElement name="Separator" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Popup/popup_02_frame3.png?fileID=21300000&amp;guid=0ff3e2c154a504e208d1293505528436&amp;type=3#popup_02_frame3&apos;); -unity-background-scale-mode: stretch-to-fill; height: 8px; opacity: 0.5; display: flex; width: 100%;" />
+                <ui:VisualElement name="content-container" style="height: 85%;">
+                    <ui:VisualElement name="contentOne" class="tabContents" style="display: none;">
+                        <ui:ScrollView vertical-scroller-visibility="Hidden">
+                            <ui:Label text="Panel 1" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentTwo" class="tabContents" style="display: none;">
+                        <ui:VisualElement name="testing" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Demo/Demo_Image/action_text_combo.png?fileID=21300000&amp;guid=581883832a4374704b3b874af707b160&amp;type=3#action_text_combo&apos;); -unity-background-scale-mode: scale-to-fit; width: 200px; height: 200px;" />
+                        <ui:Label text="Panel 2" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentThree" class="tabContents" style="display: none;">
+                        <ui:Label text="Panel 3" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                        <ui:VisualElement name="testing" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Demo/Demo_Image/action_text_warning.png?fileID=21300000&amp;guid=50f3fc3a81c62455b9346631abc915a8&amp;type=3#action_text_warning&apos;); -unity-background-scale-mode: scale-to-fit; width: 200px; height: 200px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentFour" class="tabContents" style="display: none;">
+                        <ui:Label text="Panel 4" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentFive" class="tabContents" style="display: none;">
+                        <ui:Label text="Panel 5" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentSix" class="tabContents" style="display: none;">
+                        <ui:Label text="Panel 6" display-tooltip-when-elided="true" name="text" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); font-size: 200px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </IconTabsView>
+        </ui:VisualElement>
+        <ui:VisualElement name="BannerHeader" style="position: absolute; left: auto; top: 0; right: auto; bottom: 0; background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Label/label_flag_00.png?fileID=2800000&amp;guid=2448f5684ba27485e98c9e49e5d35e81&amp;type=3#label_flag_00&apos;); -unity-background-scale-mode: scale-to-fit; width: 600px; align-items: center; justify-content: flex-start; height: 150px; margin-top: 10px;">
+            <ui:Label text="Customize your Character" display-tooltip-when-elided="true" name="bannerText" style="-unity-font: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Fonts/Alata-Regular.ttf?fileID=12800000&amp;guid=45051d5d816ef4b8d84119f09ef942fb&amp;type=3#Alata-Regular&apos;); color: rgb(255, 255, 255); font-size: 34px; -unity-text-align: upper-center; -unity-font-style: bold; letter-spacing: -2px; justify-content: flex-start; margin-top: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
