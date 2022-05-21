@@ -1,0 +1,4 @@
+<UXML xmlns:ui="UnityEngine.UIElements"
+      xmlns:ed="UnityEditor.UIElements">
+            <ui:VisualElement picking-mode="Ignore" name="focusLine" style="background-image: url(&apos;project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tabmenu_focus_01_s.png?fileID=21300000&amp;guid=43a71eab10fec48d9ba798863d1add5c&amp;type=3#frame_tabmenu_focus_01_s&apos;); -unity-background-scale-mode: scale-to-fit; width: 180px; height: 30px;" />
+</UXML>
