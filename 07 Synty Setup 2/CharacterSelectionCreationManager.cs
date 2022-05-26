@@ -1987,8 +1987,8 @@ namespace Atavism
                        // Debug.LogError(modularCharacterColor.dna+" ");
                         switch (modularCharacterColor.dna)
                         {
-                            SwitchHairColortoColor(modularCustomizationManager.defaultHairColor); // EEE - Apply Default to model
                             case "HairColor":
+                                SwitchHairColortoColor(modularCustomizationManager.defaultHairColor); // EEE - Apply Default to model
                                 for (int i = 0; i < modularCharacterColor.colors.Count; i++)
                                 {
                                     if (modularCustomizationManager.hairColors.Length > i)
