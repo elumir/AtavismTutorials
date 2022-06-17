@@ -1,0 +1,12 @@
+.unity-base-slider__tracker {
+    height: 10px;
+}
+
+.unity-base-slider__dragger {
+    background-image: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Slider/slider_edgetype_00_frame_icon1.png?fileID=21300000&guid=a0141cd9f926c4a3e9a361d041d05655&type=3#slider_edgetype_00_frame_icon1');
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
