@@ -1,0 +1,72 @@
+.icon-profile {
+    flex-direction: row;
+    padding: 30px;
+    background-image: url('project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_iconframe_square_01_n.png?fileID=-4017722061739503429&guid=a6f2fc762db1b4d479e3c2e31d4e53d9&type=3#equip_frame_empty_0');
+    margin-bottom: 40px;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+.icon-profile #profileTab {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    margin: 6px;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    flex-direction: row;
+}
+
+.icon-profile:hover {
+    scale: 1.1 1.1;
+}
+
+.icon-profile--active {
+    opacity: 1;
+}
+
+.icon-profile--active:hover {
+    scale: 1 1;
+}
+
+.icon-profile #selected {
+    display: none;
+}
+
+.icon-profile--active #selected {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-profile #characterText {
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.icon-profile #profilePic {
+    width: 90px;
+    height: 90px;
+}
+
+.icon-profile #CharacterName {
+    font-size: 22px;
+}
+
+.icon-profile #CharacterLevel {
+    font-size: 22px;
+}
+
+.icon-profile #CharacterType {
+    font-size: 22px;
+}
+
+.icon-profile #CharacterName {
+    -unity-font-style: bold;
+}

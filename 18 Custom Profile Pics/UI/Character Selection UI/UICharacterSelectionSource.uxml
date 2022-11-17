@@ -1,0 +1,170 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/_Custom/UI/Resources/Styles/CommonStyles.uss?fileID=7433441132597879392&amp;guid=f9a1fb46dae9c4387938cf09619286b4&amp;type=3#CommonStyles" />
+    <Style src="project://database/Assets/Resources/_Custom/UI/UIElements-main/Scripts/PupupPanel/Resources/GameUI/Styles/PopupMessageStyleSheet.uss?fileID=7433441132597879392&amp;guid=8a3827461fc58ec4b9b522b423bed390&amp;type=3#PopupMessageStyleSheet" />
+    <Style src="project://database/Assets/Resources/_Custom/UI/Resources/Styles/IconRadioGroupStyles.uss?fileID=7433441132597879392&amp;guid=7a6643619664f46c2bc30ce61ca054ea&amp;type=3#IconRadioGroupStyles" />
+    <Style src="project://database/Assets/Resources/_Custom/UI/Resources/Styles/IconProfileStyles.uss?fileID=7433441132597879392&amp;guid=c79d5ec922f61464abccc620a26ad9b9&amp;type=3#IconProfileStyles" />
+    <ui:VisualElement name="ScreenSelection" class="screen-centered" style="flex-direction: row; display: none;">
+        <ui:VisualElement name="sectionLeft" style="width: 33%; height: 96%; padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 40px;">
+            <ui:VisualElement name="sectionSelection" style="height: 100%; width: 100%; padding-left: 40px; padding-right: 40px; padding-top: 60px; padding-bottom: 40px; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_stageframe_02_d.png?fileID=21300000&amp;guid=884626e8859d04a88b96686e12ba67e4&amp;type=3#frame_stageframe_02_d&apos;);">
+                <ui:Label text="Select Character" display-tooltip-when-elided="true" name="label-Select" class="font" style="font-size: 42px; -unity-text-align: middle-center; -unity-font-style: bold;" />
+                <IconProfileGroup name="IconProfileGroup" style="height: 100%; margin-top: 60px; margin-bottom: 60px;">
+                    <IconProfile focusable="true" name="Profile1" style="display: flex;" />
+                    <IconProfile focusable="true" name="Profile2" profileValue="1" />
+                    <IconProfile focusable="true" name="Profile3" profileValue="2" />
+                    <ui:Button display-tooltip-when-elided="true" name="button-newCharacter" class="button" style="width: auto; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_iconframe_square_01_n.png?fileID=-4017722061739503429&amp;guid=a6f2fc762db1b4d479e3c2e31d4e53d9&amp;type=3#equip_frame_empty_0&apos;); flex-direction: row; justify-content: center; align-items: center; height: 160%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; opacity: 0.6; max-height: 160px; min-height: 160px;">
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_plus.png?fileID=21300000&amp;guid=50e238e2509184567abda05de5af2257&amp;type=3#btn_icon_plus&apos;); width: 35px; height: 35px; margin-right: 35px;" />
+                        <ui:Label text="New Character" display-tooltip-when-elided="true" name="labelNewCharacter" class="font" style="font-size: 32px;" />
+                    </ui:Button>
+                </IconProfileGroup>
+                <ui:VisualElement name="sectionButtons" style="align-items: center; height: 120px; flex-direction: row-reverse; justify-content: center;">
+                    <ui:Button text="Create" display-tooltip-when-elided="true" name="button-createCharacter" class="button" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Button/btn_rectangle_01_n_blue.png?fileID=21300000&amp;guid=6900647849bf74c2daec9082ae11cc1c&amp;type=3#btn_rectangle_01_n_blue&apos;); display: none;" />
+                    <ui:Button text="Delete" display-tooltip-when-elided="true" name="button-deleteCharacter" class="button" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Button/btn_rectangle_01_n_red.png?fileID=21300000&amp;guid=6f5cc40e4a1cd458c9901849a7f52a07&amp;type=3#btn_rectangle_01_n_red&apos;); color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="sectionMiddle" style="width: 40%; height: 96%; align-items: center; justify-content: flex-end;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="label-name" class="font" style="-unity-font-style: normal; font-size: 60px; -unity-text-align: lower-center; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/UI_Etc/InputField_frame_disable.png?fileID=4965702589195753682&amp;guid=435f2db4d17224ffeb9d28d98b001822&amp;type=3#textfield_disable_0&apos;); width: 100%; height: 80px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="sectionRight" style="width: 16%; height: 96%; justify-content: center; padding-left: 40px; padding-right: 40px; padding-top: 40px; padding-bottom: 40px; align-items: center;">
+            <ui:Button display-tooltip-when-elided="true" name="button-play" class="button" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Button/btn_sqeure_01.png?fileID=21300000&amp;guid=7c9169de7543a47c7a1a49f13864a321&amp;type=3#btn_sqeure_01&apos;); width: 160px; height: 160px; background-color: rgba(88, 88, 88, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; -unity-background-image-tint-color: rgb(0, 255, 255); align-items: center; justify-content: center;">
+                <ui:VisualElement name="play-icon" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_player_play.png?fileID=21300000&amp;guid=b05536d0b9bcf49fcb1ab30ea369a43a&amp;type=3#btn_icon_player_play&apos;); width: 43px; height: 50px;" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ScreenCustomize" class="screen-centered" style="display: flex; align-items: center; width: 60%; right: 0; left: 768px; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; justify-content: space-between; top: 0; bottom: 0;">
+        <ui:VisualElement name="PanelCustomize" style="height: 95%; width: 100%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_stageframe_04_d.png?fileID=21300000&amp;guid=9d3b67463bf7f4935a3aa15d2fe8453c&amp;type=3#frame_stageframe_04_d&apos;); margin-top: 50px;">
+            <ui:VisualElement name="Spacer" style="height: 80px;" />
+            <IconTabsView name="IconTabsView">
+                <ui:VisualElement name="tabs-container" style="margin-left: 20px; margin-right: 20px; flex-direction: row; display: flex; justify-content: space-around; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_listframe_00_dd.png?fileID=21300000&amp;guid=8d59a835dfdb543498482459cb7c528c&amp;type=3#frame_listframe_00_dd&apos;); padding-top: 20px;">
+                    <IconTab focusable="true" name="tabOne" targetID="contentOne">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_powerup.png?fileID=21300000&amp;guid=268ac875f9668439f9a1c8d5e6922839&amp;type=3#btn_icon_powerup&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabTwo" targetID="contentTwo">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_assassin.png?fileID=21300000&amp;guid=6980abda02f3f46c7a9ceef8df7e4048&amp;type=3#btn_icon_assassin&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabThree" targetID="contentThree">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_custume_top.png?fileID=21300000&amp;guid=043371bb1196d4abd90e2052bd84480f&amp;type=3#btn_icon_custume_top&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                    <IconTab focusable="true" name="tabSix" targetID="contentSix">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Icon_PictoIcons_(Original)/btn_icon_like_1.png?fileID=21300000&amp;guid=95a3ccbe9f9764c5d801ed700c5746d9&amp;type=3#btn_icon_like_1&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </IconTab>
+                </ui:VisualElement>
+                <ui:VisualElement name="Separator" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Popup/popup_02_frame3.png?fileID=21300000&amp;guid=0ff3e2c154a504e208d1293505528436&amp;type=3#popup_02_frame3&apos;); -unity-background-scale-mode: stretch-to-fill; height: 8px; opacity: 0.5; display: none; width: 100%;" />
+                <ui:VisualElement name="content-container" style="height: 85%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_iconframe_square_01_n.png?fileID=-4017722061739503429&amp;guid=a6f2fc762db1b4d479e3c2e31d4e53d9&amp;type=3#equip_frame_empty_0&apos;); margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">
+                    <ui:VisualElement name="contentOne" class="tabContents" style="align-items: flex-start; display: none; flex-direction: row;">
+                        <ui:VisualElement name="sectionBody" style="width: 100%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tableframe_01_1.png?fileID=21300000&amp;guid=89017a4beb74c4e928ec79a3fbb0463f&amp;type=3#frame_tableframe_01_1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.23); padding-left: 60px; padding-right: 60px; padding-top: 40px; padding-bottom: 30px; height: 100%; justify-content: flex-start; align-items: center; margin-bottom: 20px; margin-right: 5px;">
+                            <ui:Label text="Select Animal" display-tooltip-when-elided="true" name="labelAnimal" class="font" style="font-size: 42px; -unity-text-align: middle-center;" />
+                            <IconRadioGroup name="animalContainer" style="margin-top: 20px;">
+                                <IconRadio focusable="true" name="radio-badger">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBadger&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-deer" radioValue="1">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconDeer&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-dog" radioValue="2">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconDog&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-lion" radioValue="3">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconLion&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-lizard" radioValue="4">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconLizard&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-owl" radioValue="5">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconOwl&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-rabbit" radioValue="6">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconRabbit&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-rat" radioValue="7">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconRat&apos;); justify-content: center;" />
+                                </IconRadio>
+                            </IconRadioGroup>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="sectionBodyColor" style="width: 100%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tableframe_01_1.png?fileID=21300000&amp;guid=89017a4beb74c4e928ec79a3fbb0463f&amp;type=3#frame_tableframe_01_1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.23); padding-left: 50px; padding-right: 60px; padding-top: 40px; padding-bottom: 30px; height: 100%; justify-content: flex-start; align-items: stretch; margin-bottom: 20px; margin-left: 5px;">
+                            <ui:Label text="Select Body" display-tooltip-when-elided="true" name="labelBody" class="font" style="font-size: 42px; padding-right: 20px; -unity-text-align: middle-center;" />
+                            <IconRadioGroup name="bodyContainer" style="margin-top: 20px;">
+                                <IconRadio focusable="true" name="radio-body1">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody1&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body2" radioValue="1">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody2&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body3" radioValue="2">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody3&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body4" radioValue="3">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody4&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body5" radioValue="4">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody5&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body6" radioValue="5">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody6&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body7" radioValue="6">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody7&apos;); justify-content: center;" />
+                                </IconRadio>
+                                <IconRadio focusable="true" name="radio-body8" radioValue="7">
+                                    <ui:VisualElement name="Icon" style="background-image: resource(&apos;_Custom/Sprites/IconBody8&apos;); justify-content: center;" />
+                                </IconRadio>
+                            </IconRadioGroup>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentTwo" class="tabContents" style="display: none; flex-direction: column;">
+                        <ui:VisualElement name="sectionHeadColors" style="padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 20px; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tableframe_01_1.png?fileID=21300000&amp;guid=89017a4beb74c4e928ec79a3fbb0463f&amp;type=3#frame_tableframe_01_1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.23); justify-content: flex-start; width: 100%; height: 100%;">
+                            <ui:Label text="Set Colours For Head" display-tooltip-when-elided="true" class="font" style="-unity-text-align: middle-center; -unity-font-style: normal; font-size: 42px; margin-bottom: 30px;" />
+                            <ui:VisualElement name="sectionHeadRow" style="flex-direction: row; flex-wrap: wrap; justify-content: center; padding-left: 140px; padding-right: 140px;">
+                                <Game.UI.ColorField name="color-eye" label="Eyes" reset-label=" " BodyPartColor="ColorEye" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-nose" BodyPartColor="ColorNose" label="Nose" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-eyebrow" BodyPartColor="ColorEyebrow" label="Eyebrows" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-crest" BodyPartColor="ColorHeadCrest" label="Crest" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-furlight" BodyPartColor="ColorFurLight" label="Fur" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-furdark" BodyPartColor="ColorFurDark" label="Fur Dark" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-furdarker" BodyPartColor="ColorFurDarker" label="Fur Darker" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                                <Game.UI.ColorField name="color-headother" BodyPartColor="ColorHeadOther" label="Other" style="flex-direction: column; margin-left: 0; margin-right: 0; margin-top: 20px; margin-bottom: 0;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="tempHide" style="display: flex;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentThree" class="tabContents" style="display: none;">
+                        <ui:VisualElement name="sectionBodyColors" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tableframe_01_1.png?fileID=21300000&amp;guid=89017a4beb74c4e928ec79a3fbb0463f&amp;type=3#frame_tableframe_01_1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.23); padding-left: 60px; padding-right: 60px; padding-top: 40px; padding-bottom: 30px; align-items: center;">
+                            <ui:Label text="Choose Clothing Colour" display-tooltip-when-elided="true" name="labelClothingColour" class="font" style="font-size: 42px; padding-right: 20px; -unity-text-align: middle-center; -unity-font-style: normal; padding-bottom: 20px;" />
+                            <ui:VisualElement name="sectionBodyColorsMain" style="justify-content: space-around; width: 80%; flex-direction: row; flex-wrap: wrap;">
+                                <Game.UI.ColorField name="color-main" label="Main" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-mainlight" label="Main Light" BodyPartColor="ColorShirtLight" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-maindark" label="Main Dark" BodyPartColor="ColorShirtDark" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-hem" label="Hem" BodyPartColor="ColorHem" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-leather" label="Leather" BodyPartColor="ColorLeather" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-leatherdark" label="Leather Dark" BodyPartColor="ColorLeatherDark" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-collar" label="Collar" BodyPartColor="ColorCollar" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-gem" label="Gem" BodyPartColor="ColorGem" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-metal" label="Metal" BodyPartColor="ColorMetal" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-metallight" label="Metal Light" BodyPartColor="ColorMetalLight" />
+                                <Game.UI.ColorField name="color-metaldark" label="Metal Dark" BodyPartColor="ColorMetalDark" style="flex-direction: column;" />
+                                <Game.UI.ColorField name="color-metalblack" label="Metal Black" BodyPartColor="ColorMetalBlack" style="flex-direction: column;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="contentSix" class="tabContents" style="display: none;">
+                        <ui:VisualElement name="sectionName" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_tableframe_01_1.png?fileID=21300000&amp;guid=89017a4beb74c4e928ec79a3fbb0463f&amp;type=3#frame_tableframe_01_1&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.23); padding-left: 60px; padding-right: 60px; padding-top: 60px; padding-bottom: 60px; justify-content: flex-start;">
+                            <ui:VisualElement name="sectionNameField" style="height: 80%;">
+                                <ui:Label text="Enter Name" display-tooltip-when-elided="true" name="labelName" class="font" style="font-size: 42px; -unity-text-align: middle-center; -unity-font-style: normal;" />
+                                <ui:TextField name="field-characterName" max-length="16" tooltip="No numbers or special characters" class="textfield font" style="height: 120px; font-size: 84px;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="sectionNameButton" style="height: 20%; justify-content: center; align-items: center; flex-direction: row;">
+                                <ui:Button text="Cancel" display-tooltip-when-elided="true" name="button-cancelCharacter" class="button" style="height: 80%; font-size: 48px; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Button/btn_rectangle_01_n_red.png?fileID=21300000&amp;guid=6f5cc40e4a1cd458c9901849a7f52a07&amp;type=3#btn_rectangle_01_n_red&apos;);" />
+                                <ui:Button text="Accept" display-tooltip-when-elided="true" name="button-acceptCharacter" class="button" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Button/btn_rectangle_01_n_mint.png?fileID=21300000&amp;guid=53103da9ba51c48348bca95936a9750d&amp;type=3#btn_rectangle_01_n_mint&apos;); font-size: 48px; height: 80%; color: rgb(255, 255, 255);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </IconTabsView>
+            <Game.UI.ColorPopup name="color-popup" style="top: 0; left: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BannerHeader" style="position: absolute; left: auto; top: 0; right: auto; bottom: 0; background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Label/label_ribbon_01.png?fileID=21300000&amp;guid=da5db72ec48e840799f4a20440277192&amp;type=3#label_ribbon_01&apos;); -unity-background-scale-mode: scale-to-fit; width: 800px; align-items: center; justify-content: flex-start; height: 130px; margin-top: 10px;">
+            <ui:Label text="Customize your Character" display-tooltip-when-elided="true" name="bannerText" class="font" style="font-size: 34px; justify-content: flex-start; margin-top: 35px; -unity-text-align: middle-center; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <Game.UI.PopupMessage name="ScreenPopup" start-visible="false" style="background-image: url(&apos;project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Demo/Demo_Background/background_screen_dim.png?fileID=-3464876302821893888&amp;guid=7f5c149ac1a164cbcb6c8452a8c8c699&amp;type=3#common_screen_dim_bg_0&apos;);" />
+</ui:UXML>

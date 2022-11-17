@@ -1,0 +1,38 @@
+.mod-char-slider .unity-slider-int__label {
+    -unity-font-definition: resource('_Custom/UI/Fonts/Fedra-Sans-Std-Normal SDF');
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    -unity-font-style: normal;
+    letter-spacing: -5px;
+    width: 30%;
+}
+
+.mod-char-slider .unity-base-slider__drag-container {
+    height: 100%;
+    width: 100%;
+}
+
+.mod-char-slider .unity-base-slider__dragger {
+    background-image: url('project://database/Assets/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Slider/slider_handletype_handle.png?fileID=21300000&guid=007c6ccf576724e848dbe53ca4d14c88&type=3#slider_handletype_handle');
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.mod-char-slider .unity-base-slider__tracker {
+    height: 10px;
+    background-color: rgb(36, 29, 38);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.mod-char-slider .unity-base-slider__dragger-border {
+    display: none;
+}

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" ed="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="profileTab">
+        <ui:VisualElement name="profilePic"/>
+        <ui:VisualElement name="characterText">
+            <ui:Label text="CharacterName" display-tooltip-when-elided="true" name="CharacterName" class="font"/>
+            <ui:Label text="CharacterType" display-tooltip-when-elided="true" name="CharacterType" class="font" />
+            <ui:Label text="CharacterLevel" display-tooltip-when-elided="true" name="CharacterLevel" class="font"/>
+        </ui:VisualElement>
+    </ui:VisualElement>        
+</ui:UXML>

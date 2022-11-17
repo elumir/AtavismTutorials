@@ -1,0 +1,47 @@
+.icon-radio {
+    background-image: url('project://database/Assets/OtherPackages/GUI%20PRO%20Kit%20-%20Fantasy%20RPG/ResourcesData/Sprites/Component/Frame/frame_iconframe_circle_01_n.png?fileID=21300000&guid=812fa4aed413b4eefbc23a3e243622ff&type=3#frame_iconframe_circle_01_n');
+    width: 110px;
+    height: 110px;
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon-radio #Icon {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    margin: 6px;
+    width: 90px;
+    height: 90px;
+    top: -2px;
+}
+
+.icon-radio:hover #Icon {
+    scale: 1.2 1.2;
+}
+
+.icon-radio--active #Icon {
+    opacity: 1;
+}
+
+.icon-radio--active:hover #Icon {
+    scale: 1 1;
+}
+
+.icon-radio #selected {
+    display: none;
+}
+
+.icon-radio--active #selected {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    width: 100%;
+    height: 100%;
+}

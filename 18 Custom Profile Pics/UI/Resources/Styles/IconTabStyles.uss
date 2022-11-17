@@ -1,0 +1,27 @@
+.icon-tab {
+    align-items: center;
+    justify-content: flex-start;    
+    padding: 0px 6px 2px 6px;
+    flex-direction: column-reverse;
+    width: auto;
+}
+.icon-tab #Icon {
+    height: 80px;
+    width: 80px;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    margin: 6px;
+}
+.icon-tab:hover #Icon {
+    scale: 1.2 1.2;
+}
+.icon-tab--active #Icon {
+    opacity: 1;
+}
+
+.icon-tab #focusLine {
+    opacity: 0;
+}
+.icon-tab--active #focusLine {
+    opacity: 1;
+}

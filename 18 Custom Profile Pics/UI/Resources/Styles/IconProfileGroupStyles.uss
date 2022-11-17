@@ -1,0 +1,5 @@
+.icon-profile-group {
+    width: auto;
+    height: auto;
+    align-items: stretch;
+}
